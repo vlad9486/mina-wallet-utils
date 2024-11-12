@@ -1,0 +1,20 @@
+[package]
+name = "mina-wallet-utils"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+hex = { version = "0.4.3" }
+proof-systems = { git = "https://github.com/ChainSafe/mina-rs" }
+serde_json = { version = "1.0" }
+rand = { version = "0.8.5" }
+tiny-bip39 = { version = "1.0" }
+tiny-hderive = { version = "0.3.0" }
+
+[dependencies]
+thiserror = { version = "1.0" }
+serde = { version = "1.0", features = ["derive"] }
+generic-array = { version = "0.14.7" }
+bs58 = { version = "0.5.0", features = ["check"] } 
+argon2 = { version = "0.5.1" }
+xsalsa20poly1305 = { version = "0.9.1" }
